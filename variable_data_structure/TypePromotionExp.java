@@ -6,6 +6,7 @@ public class TypePromotionExp {
         char p='a';
         int k='b';
 
+        
         System.out.println((int)(p));
         System.out.println((int)(k));
         // System.out.println(a);
