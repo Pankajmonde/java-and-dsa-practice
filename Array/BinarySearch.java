@@ -10,6 +10,7 @@ public class BinarySearch {
 
         while(s<=e){
             int mid =(s+e)/2;
+            //s+(e-s)/2 integer overflow 
             if(arr[mid]==target){
                 ans=mid;
                 break;
