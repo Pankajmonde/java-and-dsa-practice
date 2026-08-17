@@ -12,6 +12,11 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
 
     }
+    public static void swap(int arr[], int i, int j){
+        int temp= arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
 
     public static void SelectionSort(int[] arr) {
 
@@ -26,9 +31,10 @@ public class SelectionSort {
             }
              if(min !=i){
             //swap i and j
-            int temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
+            // int temp=arr[i];
+            // arr[i]=arr[min];
+            // arr[min]=temp;
+            swap( arr, i , min);
              }
 
         }
